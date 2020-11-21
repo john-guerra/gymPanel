@@ -52,7 +52,8 @@
 .register-form a {
   position: relative;
   top: 30px;
-  color: #40bfff;
+  /*color: #40bfff;*/
+  color: white;
 }
 
 #usernameError {
@@ -76,4 +77,11 @@
 #duplicatesError {
   position: relative;
   top: 70px;
+}
+
+small.form-text.text-muted {
+  color: white !important;
+  /*  font-size: 14pt;
+  background-color: black;
+  font-weight: bold;*/
 }

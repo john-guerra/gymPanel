@@ -6,7 +6,9 @@ body {
 .App {
   text-align: center;
   background-color: #282c34;
-  z-index: -1;
+
+  /*JOHN: This was causing your app to be on top of all the controls and therefore oclude them*/
+  /*z-index: -1;*/
 }
 
 .App-logo {
@@ -38,7 +40,7 @@ body {
 }
 
 .App-header-main {
-  background: url('https://wallpaperaccess.com/full/1633729.jpg');
+  background: url("https://wallpaperaccess.com/full/1633729.jpg");
   color: white;
   height: 100%;
   width: 100%;
@@ -84,7 +86,7 @@ body {
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: black;
   text-align: center;

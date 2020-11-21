@@ -3,8 +3,8 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import DatePicker from "react-datepicker";
 
+// import "react-datepicker/dist/react-datepicker.css";
 import "./style/RegisterForm.css";
-import "react-datepicker/dist/react-datepicker.css";
 
 // rewritten the code as react hook form
 const RegisterFrom = () => {
@@ -58,6 +58,8 @@ const RegisterFrom = () => {
             Please enter 6 or more characters (no special characters).
           </small>
         </div>
+
+        {/*
         <div className={"form-group"}>
           <input
             type={"password"}
@@ -153,13 +155,13 @@ const RegisterFrom = () => {
           </small>
         </div>
         <div className="form-group">
-        <label htmlFor="Datebirth">
-          <DatePicker
-            id="date"
-            selected={startDate}
-            onChange={(date) => setBirthdate(date)}
-            ref={register}
-          />
+          <label htmlFor="Datebirth">
+            <DatePicker
+              id="date"
+              selected={startDate}
+              onChange={(date) => setBirthdate(date)}
+              ref={register}
+            />
           </label>
           <small className="form-text text-muted">
             Please choose your Date Of Birth.
@@ -174,12 +176,22 @@ const RegisterFrom = () => {
             defaultValue={"DEFAULT"}
             ref={register}
           >
-            <option aria-label="Choose your gender ..." value="DEFAULT" disabled>
+            <option
+              aria-label="Choose your gender ..."
+              value="DEFAULT"
+              disabled
+            >
               Choose your gender ...
             </option>
-            <option aria-label="Male" value="Male">Male</option>
-            <option aria-label="Female" value="Female">Female</option>
-            <option aria-label="Prefer not to say" value="Prefer not to say">Prefer not to say</option>
+            <option aria-label="Male" value="Male">
+              Male
+            </option>
+            <option aria-label="Female" value="Female">
+              Female
+            </option>
+            <option aria-label="Prefer not to say" value="Prefer not to say">
+              Prefer not to say
+            </option>
           </select>
         </div>
         <div className="form-group">
@@ -204,14 +216,17 @@ const RegisterFrom = () => {
             ref={register}
           />
         </div>
+      */}
         <button className="btn btn-primary" type={"submit"}>
           C R E A T E
         </button>
       </form>
+      {/*
       <p id="duplicatesError" style={{ color: "red" }}>
         {errMsg}
       </p>
       <a href="/">Already has an account? Log in</a>
+    */}
     </div>
   );
 };
